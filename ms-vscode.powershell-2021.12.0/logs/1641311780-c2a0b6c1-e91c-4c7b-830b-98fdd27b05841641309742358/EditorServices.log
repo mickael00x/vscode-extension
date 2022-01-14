@@ -1,0 +1,22 @@
+2022-01-04 16:56:23.118 +01:00 [INF] PowerShell Version: 7.2.1, Edition: Core
+2022-01-04 16:56:23.682 +01:00 [WRN] Tried to send request or notification before initialization was completed and will be sent later {"Method":"powerShell/executionStatusChanged","Params":{"ExecutionOptions":{"WriteOutputToHost":false,"WriteErrorsToHost":false,"AddToHistory":false,"InterruptCommandPrompt":false,"WriteInputToHost":false,"InputString":null,"UseNewScope":false,"$type":"ExecutionOptions"},"ExecutionStatus":"Running","HadErrors":false,"$type":"ExecutionStatusChangedEventArgs"},"TraceParent":null,"TraceState":null,"$type":"OutgoingNotification"}
+2022-01-04 16:56:23.699 +01:00 [WRN] Tried to send request or notification before initialization was completed and will be sent later {"Method":"powerShell/executionStatusChanged","Params":{"ExecutionOptions":{"WriteOutputToHost":false,"WriteErrorsToHost":true,"AddToHistory":false,"InterruptCommandPrompt":false,"WriteInputToHost":false,"InputString":null,"UseNewScope":false,"$type":"ExecutionOptions"},"ExecutionStatus":"Running","HadErrors":false,"$type":"ExecutionStatusChangedEventArgs"},"TraceParent":null,"TraceState":null,"$type":"OutgoingNotification"}
+2022-01-04 16:56:23.714 +01:00 [INF] highlight handler loaded
+2022-01-04 16:56:24.123 +01:00 [ERR] Execution of the following command(s) completed with errors:
+
+    Import-Module c:\Users\micka\.vscode\extensions\ms-vscode.powershell-2021.12.0\modules\PowerShellEditorServices\Commands\PowerShellEditorServices.Commands.psd1
+
+
+2022-01-04 16:56:24.126 +01:00 [WRN] Tried to send request or notification before initialization was completed and will be sent later {"Method":"powerShell/executionStatusChanged","Params":{"ExecutionOptions":{"WriteOutputToHost":false,"WriteErrorsToHost":false,"AddToHistory":false,"InterruptCommandPrompt":false,"WriteInputToHost":false,"InputString":null,"UseNewScope":false,"$type":"ExecutionOptions"},"ExecutionStatus":"Completed","HadErrors":true,"$type":"ExecutionStatusChangedEventArgs"},"TraceParent":null,"TraceState":null,"$type":"OutgoingNotification"}
+2022-01-04 16:56:24.179 +01:00 [WRN] Tried to send request or notification before initialization was completed and will be sent later {"Method":"powerShell/executionStatusChanged","Params":{"ExecutionOptions":{"WriteOutputToHost":false,"WriteErrorsToHost":true,"AddToHistory":false,"InterruptCommandPrompt":false,"WriteInputToHost":false,"InputString":null,"UseNewScope":false,"$type":"ExecutionOptions"},"ExecutionStatus":"Completed","HadErrors":false,"$type":"ExecutionStatusChangedEventArgs"},"TraceParent":null,"TraceState":null,"$type":"OutgoingNotification"}
+2022-01-04 16:56:24.527 +01:00 [ERR] Could not resolve Script Analyzer settings path due to null or empty workspaceRootPath.
+2022-01-04 16:56:24.542 +01:00 [WRN] No ConfigurationItems have been defined, configuration won't surface any configuration from the client!
+2022-01-04 16:56:25.360 +01:00 [ERR] Could not resolve relative script path
+    baseFilePath = 
+        relativePath = PSScriptAnalyzerSettings.psd1
+
+System.ArgumentNullException: Value cannot be null. (Parameter 'path1')
+   at System.IO.Path.Combine(String path1, String path2)
+   at Microsoft.PowerShell.EditorServices.Services.WorkspaceService.ResolveRelativeScriptPath(String baseFilePath, String relativePath) in D:\a\1\s\src\PowerShellEditorServices\Services\Workspace\WorkspaceService.cs:line 524
+2022-01-04 16:56:25.360 +01:00 [INF] Unable to find PSSA settings file at 'PSScriptAnalyzerSettings.psd1'. Loading default rules.
+2022-01-04 16:56:25.360 +01:00 [INF] PSScriptAnalyzer settings file not found. Falling back to default rules
